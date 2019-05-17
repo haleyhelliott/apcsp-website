@@ -1,3 +1,133 @@
 <!DOCTYPE html>
 <html>
+<head>
+</head>
+<body>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="page1.css">
+
+<div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="page1.html"class="active2">Linux Reference</a>
+        <a href="javascript:void(0);" class="icon" oneclick="myFun$
+          <i class="fa fa-bars"></i>
+        </a>
+</div>
+
+<script> function myFunction() {
+var x = document.getElementByID("myTopnav");
+if (x.className === "topnav") {
+        x.className += "responsive";
+        }
+else {
+        x.className = "topnav";
+        }
+}
+</script>
+
+
+<h1> Linux Reference</h1>
+
+<table>
+	<tr>
+<th>Name</th>
+<th>Synopsis/Syntax</th>
+<th>Description</th>
+<th>Example</th>
+	</tr>
+	<tr>
+<td>cal, ncal</td>
+<td>cal{-A number}</td>
+<td>displays a calendar organized by month, week, and day.</td>
+<td>cal 2000</td>
+	</tr>
+<tr>
+<td>clear</td>
+<td>clear</td>
+<td>clears your screen if it is possible</td>
+<td>clear</td>
+</tr>
+<tr>
+<td>date</td>
+<td>date [OPTION]</td>
+<td>displays the current day, time, and month</td>
+<td>date</td>
+</tr>
+<tr>
+<td>echo</td>
+<td>echo [SHORT-OPTION]</td>
+<td>echo the STRING(s) to standard output</td>
+<td>echo hello world</td>
+</tr>
+<tr>
+<td>man</td>
+<td>man [file]</td>
+<td>the systems manual pager</td>
+<td>man ls</td>
+</tr>
+<tr>
+<td>top</td>
+<td>top</td>
+<td>provides a dynamic real-time view of a running system</td>
+<td>top</td>
+</tr>
+<tr>
+<td>ls</td>
+<td>ls</td>
+<td>list information about the FILES</td>
+<td>ls</td>
+</tr>
+<tr>
+<td>change directory</td>
+<td>cd</td>
+<td>takes you to the indicated directory. If is alone, takes you to the home directory</td>
+<td>cd readme</td>
+</tr>
+<tr>
+<td>Print working directory</td>
+<td>pwd</td>
+<td>print the full filename of the current working directory</td>
+<td>pwd</td>
+</tr>
+<tr>
+<td>make a new directory</td>
+<td>mkdir [OPTION]</td>
+<td>creates a directory with the indicated name if it doesn’t already exist</td>
+<td>mkdir readme</td>
+</tr>
+<tr>
+<td>move files</td>
+<td>mv</td>
+<td>rename SOURCE to DEST, or move SOURCE(s) to DIRECTORY</td>
+<td>mv readme</td>
+</tr>
+<tr>
+<td>remove files</td>
+<td>rm</td>
+<td>removes each specified file. By default it does not remove directories</td>
+<td>rm readme</td>
+</tr>
+<tr>
+<td>remove directory</td>
+<td>rmdir</td>
+<td>will completely delete the indicated directory</td>
+<td>rmdir readme</td>
+</tr>
+<tr>
+<td>copy</td>
+<td>cp</td>
+<td>copy SOURCE to DEST, or multiple SOURCE(s) to DIRECTORY</td>
+<td>cp readme readme2</td>
+</tr>
+<tr>
+<td>ps</td>
+<td>ps</td>
+<td>will display information about a selection of the active process</td>
+<td>ps -aux</td>
+</tr>
+
+</table>
+
+</body>
 </html>
