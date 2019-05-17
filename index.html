@@ -1,36 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-body {
-	background-color: lightyellow;
-}
 
-h1 {
-	color: black;
-	test-align: center;
-}
-
-p {
-	font-family: verdana;
-	font-size: 20px;
-}
-</style>
   <title>Haley Elliott's Website</title>
 </head>
  <body>
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+
+<div class="topnav" id="myTopnav">
+	<a href="index.html" class="active">Home</a>
+	<a href="page1.html">Linux Reference</a>
+	<a href="javascript:void(0);" class="icon" oneclick="myFunction()">
+	  <i class="fa fa-bars"></i>
+	</a>
+</div>
+
+<div style="padding-left:16px">
+
 	<h1>Welcome!</h1>
 	<p id="demo">Welcome to the homepage of my website! My name is Haley Elliott. I am 17 years old and I am a Junior at Canyon Crest Academy in San Diego, California. </p>
-
-<button onclick="myFunction()">Click Here to see BLANK!</button>
+</div>
 
 <script> function myFunction() {
-var x = document.getElementByID("demo");
-x.style.fontSize = "25px";
-x.style.color = "red";
+var x = document.getElementByID("myTopnav");
+if (x.className === "topnav") {
+	x.className += "responsive";
+	}
+else {
+	x.className = "topnav";
+	}
 }
 </script>
+
+<h2>  </h2>
+<img src="https://lh3.googleusercontent.com/m6Q6moYJBgc5VRkIriiZXNf5eOGm4LpvmGzQq7XcnPgr0ieq3qh37M2J9z5ENSoe5sRFDBRUYQcrNpdzcbiZWLDh0iDsvlDEYUbN12bdhbN1o5ZpayEgOQ_x1wVfXVmedwjUv4A3cxaTbh0odAqW9D9CI_QqhyEh5GJ2HHg9ePkRGZM_i99OaIgqQdlfyluFCTrFVUxxWbgKc_LDOlh7NItSsPnL721eysN_Y_Wqe-2SGjNFzm1v6c2bgUG5DBw-EHoLHYhb9OzCHg-oCZKZOJHt-JQ-UHrDpMiFrkLXO-h46aCrXExjyotBHTorUvfK9WtYpy8C5Ef1LrC6BpFvgc3GBUSFzVEVuYZ6aDeoX2hPLOKNi1MaqKCqPIL1rMb7xeMYk0XZQbQsR3iWAxXXrIvl0rZGO4ukwfH9M_qVNt5YT8VBHEOkehSr3t_TGQ1hVR5x1olsbcETSL7XqjTE0-AIkaFXjWWs3yxbuqHBmLDp-_n8xPOuISRM-PC3YkyL5fFlPTZeKWheqEVq_f7Y7wiwv8m84lE1MGKmSRmTewMyYqUniUJhqC9zn6wbvSX5tr5cRYMAUVvy5jTY3cekIiaiQsxHPD1CdKbpf52qs0MReio5pNMhBMAQqgPw3qEpAf3VxDmtiFu_9trQsIjAhLelpAuneuOb=w424-h636-no"
+alt="Headshot" width="250"
+height="370">
 
 </body>
 </html>
